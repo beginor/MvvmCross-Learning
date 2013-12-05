@@ -40,7 +40,7 @@ namespace FirstMvxApp.ViewModels {
 			}
 		}
 
-		private ICommand GetFullName {
+		public ICommand FullNameCommand {
 			get {
 				return new MvxCommand(() => FullName = string.Format("{0} {1}", FirstName, LastName));
 			}

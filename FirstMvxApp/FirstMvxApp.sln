@@ -51,6 +51,6 @@ Global
 		{F25B012A-486A-4BA6-9B40-BCE8DD63DD89}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = FirstMvxApp.Core\FirstMvxApp.Core.csproj
+		StartupItem = FirstMvxApp.Touch\FirstMvxApp.Touch.csproj
 	EndGlobalSection
 EndGlobal
