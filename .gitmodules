@@ -1,0 +1,6 @@
+[submodule "MvvmCross"]
+	path = MvvmCross
+	url = https://github.com/beginor/MvvmCross.git
+[submodule "MvvmCross-Tutorials"]
+	path = MvvmCross-Tutorials
+	url = https://github.com/beginor/MvvmCross-Tutorials.git
