@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMvxApp.Core", "FirstMv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMvxApp.Touch", "FirstMvxApp.Touch\FirstMvxApp.Touch.csproj", "{F25B012A-486A-4BA6-9B40-BCE8DD63DD89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMvxApp.Droid", "FirstMvxApp.Droid\FirstMvxApp.Droid.csproj", "{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,22 @@ Global
 		{35BDFACD-1448-4558-AA5D-F0A1D17774B3}.Release|iPhone.Build.0 = Release|Any CPU
 		{35BDFACD-1448-4558-AA5D-F0A1D17774B3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{35BDFACD-1448-4558-AA5D-F0A1D17774B3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Release|iPhone.Build.0 = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{4DCF0539-EAD5-4D83-9A59-E989D3AA18ED}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{F25B012A-486A-4BA6-9B40-BCE8DD63DD89}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{F25B012A-486A-4BA6-9B40-BCE8DD63DD89}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{F25B012A-486A-4BA6-9B40-BCE8DD63DD89}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
@@ -51,6 +69,6 @@ Global
 		{F25B012A-486A-4BA6-9B40-BCE8DD63DD89}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = FirstMvxApp.Touch\FirstMvxApp.Touch.csproj
+		StartupItem = FirstMvxApp.Droid\FirstMvxApp.Droid.csproj
 	EndGlobalSection
 EndGlobal
