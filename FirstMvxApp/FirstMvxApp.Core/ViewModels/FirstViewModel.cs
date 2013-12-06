@@ -1,4 +1,3 @@
-using System;
 using Cirrious.MvvmCross.ViewModels;
 using System.Windows.Input;
 

@@ -1,4 +1,3 @@
-using System;
 using FirstMvxApp.ViewModels;
 using Cirrious.MvvmCross.ViewModels;
 
