@@ -9,6 +9,7 @@
                 <outlet property="FirstNameTextField" destination="PBC-mZ-S6V" id="0Ai-nn-pZr"/>
                 <outlet property="FullNameLabel" destination="VxX-zu-GN4" id="2Ca-7a-cRE"/>
                 <outlet property="GetFullNameButton" destination="Q20-8a-GIB" id="PKo-fb-GGf"/>
+                <outlet property="GoToDetailButton" destination="WZ6-n3-2cV" id="Xku-nX-XL5"/>
                 <outlet property="LastNameTextField" destination="Xfk-hX-6gf" id="8ZV-o4-anT"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -44,6 +45,13 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WZ6-n3-2cV">
+                    <rect key="frame" x="20" y="237" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Go to detail">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

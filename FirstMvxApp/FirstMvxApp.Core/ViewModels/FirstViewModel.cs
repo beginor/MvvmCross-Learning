@@ -44,6 +44,12 @@ namespace FirstMvxApp.ViewModels {
 				return new MvxCommand(() => FullName = string.Format("{0} {1}", FirstName, LastName));
 			}
 		}
+
+		public ICommand GoToDetailCommand {
+			get {
+				return new MvxCommand(() => this.ShowViewModel<DetailViewModel>(new { firstName = FirstName, lastName = LastName }));
+			}
+		}
 	}
 }
 

@@ -12,12 +12,12 @@ namespace FirstMvxApp.Views {
 		public override void ViewDidLoad() {
 			base.ViewDidLoad();
 			this.Title = "First Mvx View";
-			// Perform any additional setup after loading the view, typically from a nib.
 			var bindings = this.CreateBindingSet<FirstView, FirstViewModel>();
 			bindings.Bind(FirstNameTextField).TwoWay().To(vm => vm.FirstName);
 			bindings.Bind(LastNameTextField).TwoWay().To(vm => vm.LastName);
 			bindings.Bind(GetFullNameButton).To("FullNameCommand");
 			bindings.Bind(FullNameLabel).To(vm => vm.FullName);
+			bindings.Bind(GoToDetailButton).To("GoToDetailCommand");
 			bindings.Apply();
 		}
 	}

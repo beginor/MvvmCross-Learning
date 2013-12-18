@@ -30,4 +30,10 @@
         android:hint="Full name is empty."
         android:gravity="center_horizontal"
         mvx:MvxBind="Text FullName" />
+    <Button
+        android:text="Go to detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goto_detail_button"
+        mvx:MvxBind="Click GoToDetailCommand" />
 </LinearLayout>

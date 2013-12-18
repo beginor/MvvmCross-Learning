@@ -22,6 +22,9 @@ namespace FirstMvxApp.Views
 		MonoTouch.UIKit.UIButton GetFullNameButton { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UIButton GoToDetailButton { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField LastNameTextField { get; set; }
 		
 		void ReleaseDesignerOutlets ()
@@ -31,9 +34,9 @@ namespace FirstMvxApp.Views
 				FirstNameTextField = null;
 			}
 
-			if (LastNameTextField != null) {
-				LastNameTextField.Dispose ();
-				LastNameTextField = null;
+			if (FullNameLabel != null) {
+				FullNameLabel.Dispose ();
+				FullNameLabel = null;
 			}
 
 			if (GetFullNameButton != null) {
@@ -41,9 +44,14 @@ namespace FirstMvxApp.Views
 				GetFullNameButton = null;
 			}
 
-			if (FullNameLabel != null) {
-				FullNameLabel.Dispose ();
-				FullNameLabel = null;
+			if (LastNameTextField != null) {
+				LastNameTextField.Dispose ();
+				LastNameTextField = null;
+			}
+
+			if (GoToDetailButton != null) {
+				GoToDetailButton.Dispose ();
+				GoToDetailButton = null;
 			}
 		}
 	}

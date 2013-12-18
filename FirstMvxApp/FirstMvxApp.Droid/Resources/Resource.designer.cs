@@ -90,6 +90,9 @@ namespace FirstMvxApp
 			// aapt resource value: 0x7f040003
 			public const int get_full_name_button = 2130968579;
 			
+			// aapt resource value: 0x7f040005
+			public const int goto_detail_button = 2130968581;
+			
 			// aapt resource value: 0x7f040002
 			public const int last_name_edit_text = 2130968578;
 			
@@ -107,10 +110,13 @@ namespace FirstMvxApp
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int first_view = 2130903040;
+			public const int detail_view = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int splash_screen = 2130903041;
+			public const int first_view = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int splash_screen = 2130903042;
 			
 			static Layout()
 			{

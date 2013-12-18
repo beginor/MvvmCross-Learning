@@ -73,6 +73,7 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\DetailView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -85,6 +86,7 @@
     <AndroidResource Include="Resources\layout\splash_screen.axml" />
     <AndroidResource Include="Resources\layout\first_view.axml" />
     <AndroidResource Include="Resources\values\mvx_binding_attrs.xml" />
+    <AndroidResource Include="Resources\layout\detail_view.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

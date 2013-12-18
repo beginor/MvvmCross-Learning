@@ -126,6 +126,10 @@
     <Compile Include="Views\FirstView.designer.cs">
       <DependentUpon>FirstView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\DetailView.cs" />
+    <Compile Include="Views\DetailView.designer.cs">
+      <DependentUpon>DetailView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -139,5 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Views\FirstView.xib" />
+    <InterfaceDefinition Include="Views\DetailView.xib" />
   </ItemGroup>
 </Project>
