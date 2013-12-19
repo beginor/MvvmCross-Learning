@@ -26,19 +26,19 @@ namespace MvxTabs.Droid.Views {
 
 			var fragments = new [] {
 				new HomeFragmentPagerAdapter.FragmentInfo {
-					FragmentType = typeof(FirstFragment),
+					FragmentType = typeof(FirstFragmentView),
 					Title = "Tab1",
-					ViewModel = ViewModel.First
+					ViewModelType = typeof(FirstFragmentViewModel)
 				},
 				new HomeFragmentPagerAdapter.FragmentInfo {
-					FragmentType = typeof(SecondFragment),
+					FragmentType = typeof(SecondFragmentView),
 					Title = "Tab2",
-					ViewModel = ViewModel.Second
+					ViewModelType = typeof(SecondFragmentViewModel)
 				},
 				new HomeFragmentPagerAdapter.FragmentInfo {
-					FragmentType = typeof(ThirdFragment),
+					FragmentType = typeof(ThirdFragmentView),
 					Title = "Tab3",
-					ViewModel = ViewModel.Third
+					ViewModelType = typeof(ThirdFragmentViewModel)
 				}
 			};
 
@@ -47,29 +47,10 @@ namespace MvxTabs.Droid.Views {
 			viewPager.Adapter = adapter;
 		}
 
-		public class FirstFragment : MvxFragment {
-
-			public override Android.Views.View OnCreateView(Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Bundle savedInstanceState) {
-				var view = inflater.Inflate(Resource.Layout.frag_first, container, false);
-				return view;
-			}
-		}
-
-		public class SecondFragment : MvxFragment {
-
-			public override Android.Views.View OnCreateView(Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Bundle savedInstanceState) {
-				var view = inflater.Inflate(Resource.Layout.frag_second, container, false);
-				return view;
-			}
-		}
-
-		public class ThirdFragment : MvxFragment {
-
-			public override Android.Views.View OnCreateView(Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Bundle savedInstanceState) {
-				var view = inflater.Inflate(Resource.Layout.frag_third, container, false);
-				return view;
-			}
-		}
 	}
+
+
+
+	
 }
 

@@ -6,26 +6,34 @@ namespace MvxTabs.Core.ViewModels {
 
 	public class HomeViewModel : MvxViewModel {
 
-		private FirstViewModel first;
-		private SecondViewModel second;
-		private ThirdViewModel third;
+		private FirstFragmentViewModel first;
+		private SecondFragmentViewModel second;
+		private ThirdFragmentViewModel third;
 
-		public FirstViewModel First {
+		public FirstFragmentViewModel First {
 			get {
-				return first ?? (first = Mvx.Resolve<FirstViewModel>());
+				return first ?? (first = LoadViewModel<FirstFragmentViewModel>());
 			}
 		}
 
-		public SecondViewModel Second {
+		public SecondFragmentViewModel Second {
 			get {
-				return second ?? (second = Mvx.Resolve<SecondViewModel>());
+				return second ?? (second = LoadViewModel<SecondFragmentViewModel>());
 			}
 		}
 
-		public ThirdViewModel Third {
+		public ThirdFragmentViewModel Third {
 			get {
-				return third ?? (third = Mvx.Resolve<ThirdViewModel>());
+				return third ?? (third = LoadViewModel<ThirdFragmentViewModel>());
 			}
+		}
+
+		private static T LoadViewModel<T>() {
+			var loader = Mvx.Resolve<IMvxViewModelLoader>();
+			var request = new MvxViewModelRequest {
+				ViewModelType = typeof(T)
+			};
+			return (T)loader.LoadViewModel(request, null);
 		}
 	}
 }

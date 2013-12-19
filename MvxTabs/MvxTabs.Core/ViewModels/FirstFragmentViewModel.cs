@@ -3,7 +3,7 @@ using Cirrious.MvvmCross.ViewModels;
 
 namespace MvxTabs.Core.ViewModels {
 
-	public class SecondViewModel : MvxViewModel {
+	public class FirstFragmentViewModel : MvxViewModel {
 
 	}
 }

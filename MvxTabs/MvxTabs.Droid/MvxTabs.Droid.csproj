@@ -82,6 +82,9 @@
     <Compile Include="DebugTrace.cs" />
     <Compile Include="Views\HomeView.cs" />
     <Compile Include="Adapters\HomeFragmentPagerAdapter.cs" />
+    <Compile Include="Views\FirstFragmentView.cs" />
+    <Compile Include="Views\SecondFragmentView.cs" />
+    <Compile Include="Views\ThirdFragmentView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

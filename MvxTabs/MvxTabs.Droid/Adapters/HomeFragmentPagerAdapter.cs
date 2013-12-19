@@ -5,6 +5,7 @@ using Android.Content;
 using Android.Support.V4.App;
 using Cirrious.MvvmCross.Droid.Fragging.Fragments;
 using Cirrious.MvvmCross.ViewModels;
+using Cirrious.CrossCore;
 
 namespace MvxTabs.Droid.Adapters {
 
@@ -31,8 +32,16 @@ namespace MvxTabs.Droid.Adapters {
 		public override Fragment GetItem(int position) {
 			var fragInfo = Fragments.ElementAt(position);
 			var fragment = Fragment.Instantiate(context, FragmentJavaName(fragInfo.FragmentType));
-			((MvxFragment)fragment).ViewModel = fragInfo.ViewModel;
+			((MvxFragment)fragment).ViewModel = LoadViewModel(fragInfo.ViewModelType);
 			return fragment;
+		}
+
+		private static IMvxViewModel LoadViewModel(Type viewModelType) {
+			var loader = Mvx.Resolve<IMvxViewModelLoader>();
+			var request = new MvxViewModelRequest {
+				ViewModelType = viewModelType
+			};
+			return loader.LoadViewModel(request, null);
 		}
 
 		string FragmentJavaName(Type fragmentType) {
@@ -53,7 +62,7 @@ namespace MvxTabs.Droid.Adapters {
 
 			public Type FragmentType { get; set; }
 
-			public IMvxViewModel ViewModel { get; set; }
+			public Type ViewModelType { get; set; }
 
 		}
 	}
