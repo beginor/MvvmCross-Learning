@@ -32,16 +32,8 @@ namespace MvxTabs.Droid.Adapters {
 		public override Fragment GetItem(int position) {
 			var fragInfo = Fragments.ElementAt(position);
 			var fragment = Fragment.Instantiate(context, FragmentJavaName(fragInfo.FragmentType));
-			((MvxFragment)fragment).ViewModel = LoadViewModel(fragInfo.ViewModelType);
+			((MvxFragment)fragment).ViewModel = fragInfo.ViewModel;
 			return fragment;
-		}
-
-		private static IMvxViewModel LoadViewModel(Type viewModelType) {
-			var loader = Mvx.Resolve<IMvxViewModelLoader>();
-			var request = new MvxViewModelRequest {
-				ViewModelType = viewModelType
-			};
-			return loader.LoadViewModel(request, null);
 		}
 
 		string FragmentJavaName(Type fragmentType) {
@@ -62,7 +54,7 @@ namespace MvxTabs.Droid.Adapters {
 
 			public Type FragmentType { get; set; }
 
-			public Type ViewModelType { get; set; }
+			public IMvxViewModel ViewModel { get; set; }
 
 		}
 	}

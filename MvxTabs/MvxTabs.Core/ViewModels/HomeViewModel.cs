@@ -1,6 +1,9 @@
 using System;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.CrossCore;
+using System.Collections.Generic;
+using MvxTabs.Core.Data;
+using System.Linq;
 
 namespace MvxTabs.Core.ViewModels {
 
@@ -12,28 +15,60 @@ namespace MvxTabs.Core.ViewModels {
 
 		public FirstFragmentViewModel First {
 			get {
-				return first ?? (first = LoadViewModel<FirstFragmentViewModel>());
+				return first ?? (first = Mvx.IocConstruct<FirstFragmentViewModel>());
 			}
 		}
 
 		public SecondFragmentViewModel Second {
 			get {
-				return second ?? (second = LoadViewModel<SecondFragmentViewModel>());
+				return second ?? (second = Mvx.IocConstruct<SecondFragmentViewModel>());
 			}
 		}
 
 		public ThirdFragmentViewModel Third {
 			get {
-				return third ?? (third = LoadViewModel<ThirdFragmentViewModel>());
+				return third ?? (third = Mvx.IocConstruct<ThirdFragmentViewModel>());
 			}
 		}
 
-		private static T LoadViewModel<T>() {
-			var loader = Mvx.Resolve<IMvxViewModelLoader>();
-			var request = new MvxViewModelRequest {
-				ViewModelType = typeof(T)
+		IEnumerable<Item> items;
+		Item selectedItem;
+
+		public Item SelectedItem {
+			get {
+				return selectedItem;
+			}
+			set {
+				if (value != selectedItem) {
+					selectedItem = value;
+					RaisePropertyChanged(() => SelectedItem);
+				}
+			}
+		}
+
+		public IEnumerable<Item> Items {
+			get {
+				return items;
+			}
+			set {
+				items = value;
+				RaisePropertyChanged(() => Items);
+			}
+		}
+
+		public HomeViewModel() {
+			this.items = new [] {
+				new Item { ItemId = 1, ItemName = "OS2" },
+				new Item { ItemId = 2, ItemName = "NO2" },
+				new Item { ItemId = 3, ItemName = "O3_1" },
+				new Item { ItemId = 4, ItemName = "O3_8" },
+				new Item { ItemId = 5, ItemName = "PM10" },
+				new Item { ItemId = 6, ItemName = "PM25" },
+				new Item { ItemId = 7, ItemName = "AQI" },
+				new Item { ItemId = 8, ItemName = "CO" }
 			};
-			return (T)loader.LoadViewModel(request, null);
+			this.selectedItem = items.ElementAt(5);
+			Mvx.RegisterSingleton(this);
 		}
 	}
 }

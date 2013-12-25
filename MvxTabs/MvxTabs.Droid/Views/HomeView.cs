@@ -28,17 +28,32 @@ namespace MvxTabs.Droid.Views {
 				new HomeFragmentPagerAdapter.FragmentInfo {
 					FragmentType = typeof(FirstFragmentView),
 					Title = "Tab1",
-					ViewModelType = typeof(FirstFragmentViewModel)
+					ViewModel = ViewModel.First
 				},
 				new HomeFragmentPagerAdapter.FragmentInfo {
 					FragmentType = typeof(SecondFragmentView),
 					Title = "Tab2",
-					ViewModelType = typeof(SecondFragmentViewModel)
+					ViewModel = ViewModel.Second
 				},
 				new HomeFragmentPagerAdapter.FragmentInfo {
 					FragmentType = typeof(ThirdFragmentView),
 					Title = "Tab3",
-					ViewModelType = typeof(ThirdFragmentViewModel)
+					ViewModel = ViewModel.Third
+				},
+				new HomeFragmentPagerAdapter.FragmentInfo {
+					FragmentType = typeof(FirstFragmentView),
+					Title = "Tab4",
+					ViewModel = ViewModel.First
+				},
+				new HomeFragmentPagerAdapter.FragmentInfo {
+					FragmentType = typeof(SecondFragmentView),
+					Title = "Tab5",
+					ViewModel = ViewModel.Second
+				},
+				new HomeFragmentPagerAdapter.FragmentInfo {
+					FragmentType = typeof(ThirdFragmentView),
+					Title = "Tab6",
+					ViewModel = ViewModel.Third
 				}
 			};
 

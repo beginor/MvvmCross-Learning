@@ -83,11 +83,14 @@ namespace MvxTabs.Droid
 			// aapt resource value: 0x7f050000
 			public const int MvxBindingTagUnique = 2131034112;
 			
-			// aapt resource value: 0x7f050002
-			public const int view_home_tabstrip = 2131034114;
-			
 			// aapt resource value: 0x7f050001
-			public const int view_home_viewpager = 2131034113;
+			public const int frag_first_mvxspinner = 2131034113;
+			
+			// aapt resource value: 0x7f050003
+			public const int view_home_tabstrip = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int view_home_viewpager = 2131034114;
 			
 			static Id()
 			{
@@ -106,16 +109,22 @@ namespace MvxTabs.Droid
 			public const int frag_first = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int frag_second = 2130903041;
+			public const int frag_first_spinner_dropdown_item = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int frag_third = 2130903042;
+			public const int frag_first_spinner_item = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int splash_screen = 2130903043;
+			public const int frag_second = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int view_home = 2130903044;
+			public const int frag_third = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int splash_screen = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int view_home = 2130903046;
 			
 			static Layout()
 			{

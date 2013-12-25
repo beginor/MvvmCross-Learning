@@ -38,6 +38,7 @@
     <Compile Include="ViewModels\FirstFragmentViewModel.cs" />
     <Compile Include="ViewModels\SecondFragmentViewModel.cs" />
     <Compile Include="ViewModels\ThirdFragmentViewModel.cs" />
+    <Compile Include="Data\Item.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
@@ -50,5 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />
+    <Folder Include="Data\" />
   </ItemGroup>
 </Project>
