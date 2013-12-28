@@ -84,7 +84,10 @@ namespace MvxTabs.Droid
 			public const int MvxBindingTagUnique = 2131034112;
 			
 			// aapt resource value: 0x7f050002
-			public const int view_home_action_spinner = 2131034114;
+			public const int frag_5_opt_act1 = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int view_home_action_spinner = 2131034115;
 			
 			// aapt resource value: 0x7f050001
 			public const int view_home_viewpager = 2131034113;
@@ -143,7 +146,10 @@ namespace MvxTabs.Droid
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int view_home = 2131099648;
+			public const int frag_5 = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int view_home = 2131099649;
 			
 			static Menu()
 			{

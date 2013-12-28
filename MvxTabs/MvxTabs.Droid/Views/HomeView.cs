@@ -50,6 +50,11 @@ namespace MvxTabs.Droid.Views {
 					FragmentType = typeof(FourthFragmentView),
 					Title = "Tab4",
 					ViewModel = ViewModel.Fourth
+				},
+				new HomeFragmentPagerAdapter.FragmentInfo {
+					FragmentType = typeof(FifthFragmentView),
+					Title = "Tab5",
+					ViewModel = null
 				}
 			};
 

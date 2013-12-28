@@ -105,6 +105,7 @@
     <AndroidResource Include="Resources\layout\view_home_option_spinner_dropdown_item.axml" />
     <AndroidResource Include="Resources\layout\view_home_option_spinner_item.axml" />
     <AndroidResource Include="Resources\layout\frag_5.axml" />
+    <AndroidResource Include="Resources\menu\frag_5.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
