@@ -30,7 +30,6 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -40,7 +39,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -85,6 +83,7 @@
     <Compile Include="Views\FirstFragmentView.cs" />
     <Compile Include="Views\SecondFragmentView.cs" />
     <Compile Include="Views\ThirdFragmentView.cs" />
+    <Compile Include="Views\FourthFragmentView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -102,6 +101,8 @@
     <AndroidResource Include="Resources\values\mvx.xml" />
     <AndroidResource Include="Resources\layout\frag_first_spinner_item.axml" />
     <AndroidResource Include="Resources\layout\frag_first_spinner_dropdown_item.axml" />
+    <AndroidResource Include="Resources\menu\view_home.xml" />
+    <AndroidResource Include="Resources\layout\frag_4.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -113,5 +114,6 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Adapters\" />
+    <Folder Include="Resources\menu\" />
   </ItemGroup>
 </Project>

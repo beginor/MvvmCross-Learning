@@ -12,6 +12,7 @@ namespace MvxTabs.Core.ViewModels {
 		private FirstFragmentViewModel first;
 		private SecondFragmentViewModel second;
 		private ThirdFragmentViewModel third;
+		private FourthFragmentViewModel fourth;
 
 		public FirstFragmentViewModel First {
 			get {
@@ -31,7 +32,13 @@ namespace MvxTabs.Core.ViewModels {
 			}
 		}
 
-		IEnumerable<Item> items;
+		public FourthFragmentViewModel Fourth {
+			get {
+				return fourth ?? (fourth = Mvx.IocConstruct<FourthFragmentViewModel>());
+			}
+		}
+
+		IList<Item> items;
 		Item selectedItem;
 
 		public Item SelectedItem {
@@ -46,7 +53,7 @@ namespace MvxTabs.Core.ViewModels {
 			}
 		}
 
-		public IEnumerable<Item> Items {
+		public IList<Item> Items {
 			get {
 				return items;
 			}
@@ -57,7 +64,7 @@ namespace MvxTabs.Core.ViewModels {
 		}
 
 		public HomeViewModel() {
-			this.items = new [] {
+			this.items = new List<Item> {
 				new Item { ItemId = 1, ItemName = "OS2" },
 				new Item { ItemId = 2, ItemName = "NO2" },
 				new Item { ItemId = 3, ItemName = "O3_1" },

@@ -11,6 +11,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+<!--
     <MvxSpinner
         android:id="@+id/frag_first_mvxspinner"
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
         local:MvxItemTemplate="@layout/frag_first_spinner_item"
         local:MvxDropDownItemTemplate="@layout/frag_first_spinner_dropdown_item"
         local:MvxBind="ItemsSource Home.Items;SelectedItem Home.SelectedItem" />
+    -->
     <TextView
         android:text="SelectedItem"
         android:layout_width="match_parent"

@@ -3,18 +3,16 @@ using Cirrious.MvvmCross.ViewModels;
 
 namespace MvxTabs.Core.ViewModels {
 
-	public class ThirdFragmentViewModel : MvxViewModel {
+	public class FourthFragmentViewModel : MvxViewModel {
 
 		public HomeViewModel Home {
 			get;
 			private set;
 		}
 
-		public ThirdFragmentViewModel(HomeViewModel home) {
+		public FourthFragmentViewModel(HomeViewModel home) {
 			Home = home;
 		}
 
 	}
-
 }
-

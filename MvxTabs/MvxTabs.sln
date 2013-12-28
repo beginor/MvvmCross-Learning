@@ -21,6 +21,6 @@ Global
 		{F0CB8C44-772D-4E56-80B6-1681787370A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = MvxTabs.Core\MvxTabs.Core.csproj
+		StartupItem = MvxTabs.Droid\MvxTabs.Droid.csproj
 	EndGlobalSection
 EndGlobal
