@@ -99,8 +99,8 @@ namespace MvxTabs.Droid.Views {
 			if (spinner != null) {
 				spinner.Adapter = new MvxAdapter(this, (IMvxAndroidBindingContext)BindingContext) {
 					ItemsSource = ViewModel.Items,
-					ItemTemplateId = Resource.Layout.frag_first_spinner_item,
-					DropDownItemTemplateId = Resource.Layout.frag_first_spinner_dropdown_item
+					ItemTemplateId = Resource.Layout.view_home_option_spinner_item,
+					DropDownItemTemplateId = Resource.Layout.view_home_option_spinner_dropdown_item
 				};
 				spinner.ItemSelected += (sender, e) => {
 					var item = ViewModel.Items.ElementAt(e.Position);

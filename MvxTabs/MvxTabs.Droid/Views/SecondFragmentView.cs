@@ -14,7 +14,7 @@ namespace MvxTabs.Droid.Views {
 
 		public override Android.Views.View OnCreateView(Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Bundle savedInstanceState) {
 			base.OnCreateView(inflater, container, savedInstanceState);
-			return this.BindingInflate(Resource.Layout.frag_second, null);
+			return this.BindingInflate(Resource.Layout.frag_2, null);
 		}
 	}
 	

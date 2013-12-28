@@ -84,6 +84,7 @@
     <Compile Include="Views\SecondFragmentView.cs" />
     <Compile Include="Views\ThirdFragmentView.cs" />
     <Compile Include="Views\FourthFragmentView.cs" />
+    <Compile Include="Views\FifthFragmentView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -95,14 +96,15 @@
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\splash_screen.axml" />
     <AndroidResource Include="Resources\layout\view_home.axml" />
-    <AndroidResource Include="Resources\layout\frag_first.axml" />
-    <AndroidResource Include="Resources\layout\frag_second.axml" />
-    <AndroidResource Include="Resources\layout\frag_third.axml" />
     <AndroidResource Include="Resources\values\mvx.xml" />
-    <AndroidResource Include="Resources\layout\frag_first_spinner_item.axml" />
-    <AndroidResource Include="Resources\layout\frag_first_spinner_dropdown_item.axml" />
     <AndroidResource Include="Resources\menu\view_home.xml" />
     <AndroidResource Include="Resources\layout\frag_4.axml" />
+    <AndroidResource Include="Resources\layout\frag_1.axml" />
+    <AndroidResource Include="Resources\layout\frag_2.axml" />
+    <AndroidResource Include="Resources\layout\frag_3.axml" />
+    <AndroidResource Include="Resources\layout\view_home_option_spinner_dropdown_item.axml" />
+    <AndroidResource Include="Resources\layout\view_home_option_spinner_item.axml" />
+    <AndroidResource Include="Resources\layout\frag_5.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

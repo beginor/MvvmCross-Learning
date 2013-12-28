@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Fifth Fragment"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<!--
+    <MvxSpinner
+        android:id="@+id/frag_first_mvxspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxItemTemplate="@layout/frag_first_spinner_item"
+        local:MvxDropDownItemTemplate="@layout/frag_first_spinner_dropdown_item"
+        local:MvxBind="ItemsSource Home.Items;SelectedItem Home.SelectedItem" />
+    -->
+    <TextView
+        android:text="SelectedItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selected Item"
+        local:MvxBind="Text Home.SelectedItem.ItemName" />
+</LinearLayout>
