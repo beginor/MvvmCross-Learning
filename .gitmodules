@@ -4,3 +4,6 @@
 [submodule "MvvmCross-Tutorials"]
 	path = MvvmCross-Tutorials
 	url = https://github.com/beginor/MvvmCross-Tutorials.git
+[submodule "NPlus1"]
+	path = NPlus1
+	url = https://github.com/MvvmCross/NPlus1DaysOfMvvmCross.git
