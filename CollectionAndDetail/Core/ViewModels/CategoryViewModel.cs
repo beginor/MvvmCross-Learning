@@ -1,11 +1,28 @@
-﻿using System;
-using Cirrious.MvvmCross.ViewModels;
+﻿using Cirrious.MvvmCross.ViewModels;
+using System.Collections.Generic;
+using CollectionAndDetail.Core.Models;
 
-namespace CollectionAndDetail.Core {
+namespace CollectionAndDetail.Core.ViewModels {
 
     public class CategoryViewModel : MvxViewModel {
 
-        public CategoryViewModel() {
+        IList<Category> categories;
+
+        public IList<Category> Categories {
+            get {
+                return categories;
+            }
+            set {
+                categories = value;
+                RaisePropertyChanged(() => Categories);
+            }
+        }
+
+        public override void Start() {
+            base.Start();
+            if (Categories == null) {
+
+            }
         }
     }
 }

@@ -263,6 +263,6 @@ Global
 		{E7909D1D-415A-4E35-8A08-8970BA605F2F} = {88244AAE-15A7-49B3-B031-290EC37F245A}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Core\Core.csproj
+		StartupItem = Droid\Droid.csproj
 	EndGlobalSection
 EndGlobal
