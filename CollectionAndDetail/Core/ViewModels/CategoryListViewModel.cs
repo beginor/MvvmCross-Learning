@@ -4,7 +4,7 @@ using CollectionAndDetail.Core.Models;
 
 namespace CollectionAndDetail.Core.ViewModels {
 
-    public class CategoryViewModel : MvxViewModel {
+    public class CategoryListViewModel : MvxViewModel {
 
         IList<Category> categories;
 

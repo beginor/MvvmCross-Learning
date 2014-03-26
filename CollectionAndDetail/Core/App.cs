@@ -10,8 +10,9 @@ namespace CollectionAndDetail.Core {
 
         public override void Initialize() {
             base.Initialize();
-            RegisterAppStart<CategoryViewModel>();
-            InitializeDataService();
+            //RegisterAppStart<CategoryListViewModel>();
+            RegisterAppStart<Test2ViewModel>();
+            //InitializeDataService();
         }
 
         public override void LoadPlugins(Cirrious.CrossCore.Plugins.IMvxPluginManager pluginManager) {

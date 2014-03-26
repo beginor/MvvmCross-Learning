@@ -16,8 +16,6 @@
     <AssemblyName>Droid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,6 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -98,9 +97,9 @@
       <Project>{D89351C1-D48F-4AD0-A0B9-353A93425AB7}</Project>
       <Name>Cirrious.MvvmCross.Localization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core\Core.csproj">
+    <ProjectReference Include="..\Core\CollectionAndDetail.Core.csproj">
       <Project>{609BFB0E-F44B-48DE-AAB8-2BC97EC51289}</Project>
-      <Name>Core</Name>
+      <Name>CollectionAndDetail.Core</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
