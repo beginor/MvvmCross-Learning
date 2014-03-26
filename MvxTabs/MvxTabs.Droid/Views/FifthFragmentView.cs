@@ -9,7 +9,7 @@ namespace MvxTabs.Droid.Views {
 	public class FifthFragmentView : MvxFragment {
 
 		public override void OnCreate(Bundle savedInstanceState) {
-			SetHasOptionsMenu(true);
+            SetHasOptionsMenu(true);
 			base.OnCreate(savedInstanceState);
 		}
 
