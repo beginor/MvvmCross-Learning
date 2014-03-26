@@ -11,7 +11,7 @@ namespace CollectionAndDetail.Core {
         public override void Initialize() {
             base.Initialize();
             //RegisterAppStart<CategoryListViewModel>();
-            RegisterAppStart<Test2ViewModel>();
+            RegisterAppStart<Test1ViewModel>();
             //InitializeDataService();
         }
 
