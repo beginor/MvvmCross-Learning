@@ -2,6 +2,8 @@
 using Cirrious.MvvmCross.Touch.Platform;
 using Cirrious.MvvmCross.ViewModels;
 using MonoTouch.UIKit;
+using Cirrious.MvvmCross.Touch.Views;
+using Cirrious.MvvmCross.Touch.Views.Presenters;
 
 namespace MvxTabs.Touch {
 
@@ -14,11 +16,13 @@ namespace MvxTabs.Touch {
             return new MvxTabs.Core.App();
         }
 
-        protected override Cirrious.MvvmCross.Touch.Views.Presenters.IMvxTouchViewPresenter CreatePresenter() {
+        /*
+        protected override IMvxTouchViewPresenter CreatePresenter() {
             return new StoryboardViewPresenter(ApplicationDelegate, Window);
         }
+        */
 
-        protected override Cirrious.MvvmCross.Touch.Views.IMvxTouchViewsContainer CreateTouchViewsContainer() {
+        protected override IMvxTouchViewsContainer CreateTouchViewsContainer() {
             return new StoryboardViewsContainer();
         }
     }

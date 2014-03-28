@@ -6,7 +6,6 @@ using Cirrious.MvvmCross.Touch.Views;
 
 namespace MvxTabs.Touch.Views {
 
-    //[Register ("HomeView")]
     partial class HomeView : MvxViewController {
 
         public HomeView(IntPtr handle) : base(handle) {
@@ -14,7 +13,6 @@ namespace MvxTabs.Touch.Views {
 
         public override void ViewDidLoad() {
             base.ViewDidLoad();
-
         }
     }
 }

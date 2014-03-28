@@ -9,13 +9,12 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.CodeDom.Compiler;
 
-namespace MvxTabs.Touch.Views
-{
-	[Register ("HomeView")]
-	partial class HomeView
-	{
-		void ReleaseDesignerOutlets ()
-		{
-		}
-	}
+namespace MvxTabs.Touch.Views {
+
+    [Register("HomeView")]
+    partial class HomeView {
+
+        void ReleaseDesignerOutlets() {
+        }
+    }
 }
